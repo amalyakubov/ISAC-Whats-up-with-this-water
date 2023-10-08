@@ -1,4 +1,7 @@
-import Image from "next/image";
+"use client";
+import { fetchServerResponse } from "next/dist/client/components/router-reducer/fetch-server-response";
+import React from "react";
+import getLocation from "./api/location";
 
 export default function Home() {
   return (
@@ -17,9 +20,22 @@ export default function Home() {
           border: "4px solid black",
           backgroundColor: "#010048  ",
         }}
+      ></div>
+      <button
+        onClick={handldeClick}
+        style={{
+          color: "black",
+          width: "300px",
+          height: "100px",
+          border: "5px solid black",
+        }}
       >
-        <div></div>
-      </div>
+        cd Click me /
+      </button>
     </main>
   );
+}
+
+function handldeClick() {
+  getLocation();
 }
