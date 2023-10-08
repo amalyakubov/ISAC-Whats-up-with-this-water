@@ -16,3 +16,13 @@ a {
 ::selection {
   background-color: yellow;
 }
+
+#section_footer {
+  width: 100%;
+  background: #215f4a;
+
+  p {
+    color: #ffffff;
+    font-size: 0.5em;
+  }
+}

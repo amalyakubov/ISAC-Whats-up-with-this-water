@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-
+import Footer from "./components/footer";
 const inter = Inter({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -14,9 +14,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/*
-        
-       */}
       <body style={{ padding: "2em", paddingTop: "0", height: "100%" }}>
         <nav>
           <ol
@@ -48,19 +45,11 @@ export default function RootLayout({ children }) {
               </a>
             </div>
             <a href="./pages/about.jsx">About</a>
-            <a href="./">Fun Facts</a>
+            <a href="./pages/facts.jsx">Fun Facts</a>
           </ol>
         </nav>
         {children}
-        <footer>
-          <div
-            style={{
-              height: "160px",
-              width: "100%",
-              backgroundColor: "yellow",
-            }}
-          ></div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

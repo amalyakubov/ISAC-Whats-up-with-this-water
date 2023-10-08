@@ -30,7 +30,6 @@ export default function Home() {
       style={{
         display: "flex",
         flexDirection: "column",
-        height: "100vh",
       }}
     >
       <div
