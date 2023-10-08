@@ -17,14 +17,39 @@ export default function RootLayout({ children }) {
       {/*
         
        */}
-      <body>
+      <body style={{ padding: "2em", paddingTop: "0" }}>
         <nav>
-          <h1>Logo</h1>
-          <ul>
-            <li>
-              <a href="#">About</a>
-            </li>
-          </ul>
+          <ol
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "5vw",
+              fontSize: "24px",
+              backgroundColor: "#FBEEC1",
+              height: "60px",
+              paddingRight: "90px",
+              borderRadius: "40px",
+              margin: "10px",
+            }}
+          >
+            <div style={{ display: "flex" }}>
+              <a
+                href="./page.jsx"
+                style={{
+                  marginRight: "30px",
+                  justifySelf: "left",
+                  paddingLeft: "30px",
+                }}
+              >
+                Home
+              </a>
+              <a href="">
+                <img src="" alt="Logo" />
+              </a>
+            </div>
+            <a href="./pages/about.jsx">About</a>
+            <a href="./">Fun Facts</a>
+          </ol>
         </nav>
         {children}
       </body>
