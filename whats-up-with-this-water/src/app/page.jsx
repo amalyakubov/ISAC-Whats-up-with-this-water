@@ -35,6 +35,8 @@ export default function Home() {
     >
       <div
         style={{
+          display: "flex",
+          alignItems: "center",
           color: "white",
           height: "50vh",
           width: "100%",
@@ -42,9 +44,18 @@ export default function Home() {
           backgroundColor: "#010048  ",
           borderRadius: "30px",
           marginTop: "1.5em",
+          padding: "3em",
+          justifyContent: "center",
         }}
       >
-        <p style={{ textAlign: "center", fontSize: "60px", marginTop: "20vh" }}>
+        <p
+          style={{
+            textAlign: "center",
+            fontSize: "60px",
+            flex: 1,
+            flexWrap: "wrap",
+          }}
+        >
           What's Up With With This Water?
         </p>
       </div>

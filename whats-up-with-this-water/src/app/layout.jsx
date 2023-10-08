@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       {/*
         
        */}
-      <body style={{ padding: "2em", paddingTop: "0" }}>
+      <body style={{ padding: "2em", paddingTop: "0", height: "100%" }}>
         <nav>
           <ol
             style={{
@@ -52,6 +52,15 @@ export default function RootLayout({ children }) {
           </ol>
         </nav>
         {children}
+        <footer>
+          <div
+            style={{
+              height: "160px",
+              width: "100%",
+              backgroundColor: "yellow",
+            }}
+          ></div>
+        </footer>
       </body>
     </html>
   );
