@@ -26,3 +26,16 @@ a {
     font-size: 0.5em;
   }
 }
+
+div.dash-member {
+  padding: "3em";
+  justify-content: center;
+  border-radius: 30px;
+}
+
+div.dash-member p {
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  color: black;
+}

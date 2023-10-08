@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "./components/footer";
+
 const inter = Inter({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -14,7 +15,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ padding: "2em", paddingTop: "0", height: "100%" }}>
+      <body
+        style={{
+          padding: "2em",
+          paddingTop: "0",
+          paddingBottom: "0",
+          height: "100%",
+        }}
+      >
         <nav>
           <ol
             style={{
@@ -31,7 +39,7 @@ export default function RootLayout({ children }) {
           >
             <div style={{ display: "flex" }}>
               <a
-                href="./page.jsx"
+                href="./"
                 style={{
                   marginRight: "30px",
                   justifySelf: "left",
@@ -41,11 +49,13 @@ export default function RootLayout({ children }) {
                 Home
               </a>
               <a href="">
-                <img src="" alt="Logo" />
+                <img
+                  src="./img/mrbags.png"
+                  alt="Logo"
+                  style={{ maxHeight: "40px" }}
+                />
               </a>
             </div>
-            <a href="./pages/about.jsx">About</a>
-            <a href="./pages/facts.jsx">Fun Facts</a>
           </ol>
         </nav>
         {children}

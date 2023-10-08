@@ -4,7 +4,6 @@ export default function getLocation() {
       const LATITUDE = position.coords.latitude;
       const LONGITUDE = position.coords.longitude;
       const array = [LATITUDE, LONGITUDE];
-      console.log(array);
       resolve(array);
     };
 
